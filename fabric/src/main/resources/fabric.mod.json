@@ -18,18 +18,18 @@
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.example.fabric.ExampleModFabric"
+        "value": "net.alumi.mfca.fabric.MFCAFabric"
       }
     ],
     "client": [
       {
         "adapter": "kotlin",
-        "value": "com.example.fabric.client.ExampleModFabricClient"
+        "value": "net.alumi.mfca.fabric.client.ExampleModFabricClient"
       }
     ]
   },
   "mixins": [
-    "example_mod.mixins.json"
+    "${mod_id}.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
@@ -37,7 +37,8 @@
     "java": ">=21",
     "architectury": ">=${architectury}",
     "fabric-api": "*",
-    "fabric-language-kotlin": ">=${flk}"
+    "fabric-language-kotlin": ">=${flk}",
+    "mca": "*"
   },
   "suggests": {
     "another-mod": "*"

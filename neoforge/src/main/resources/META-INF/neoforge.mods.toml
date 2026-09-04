@@ -35,4 +35,4 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[mixins]]
-config = "example_mod.mixins.json"
+config = "${mod_id}.mixins.json"

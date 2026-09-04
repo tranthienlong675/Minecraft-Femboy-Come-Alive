@@ -1,4 +1,4 @@
-package com.example.fabric.client
+package net.alumi.mfca.fabric.client
 
 import net.fabricmc.api.ClientModInitializer
 

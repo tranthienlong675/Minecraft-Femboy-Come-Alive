@@ -14,6 +14,16 @@ repositories {
         name = "NeoForged"
         url = uri("https://maven.neoforged.net/releases")
     }
+
+    maven {
+        name = "Modrinth"
+        setUrl("https://api.modrinth.com/maven")
+    }
+
+    maven {
+        name = "Conczin"
+        url = uri("https://maven.conczin.net/Artifacts/")
+    }
 }
 
 architectury {
@@ -25,14 +35,15 @@ val common: Configuration by configurations.creating {
     isCanBeResolved = true
     isCanBeConsumed = false
 }
-val shadowCommon: Configuration by configurations.creating {
+
+val shadowBundle: Configuration by configurations.creating {
     isCanBeResolved = true
     isCanBeConsumed = false
 }
+
 val developmentNeoForge: Configuration by configurations.getting
 
 configurations {
-
     compileOnly.configure { extendsFrom(common) }
     runtimeOnly.configure { extendsFrom(common) }
     developmentNeoForge.extendsFrom(common)
@@ -48,11 +59,15 @@ dependencies {
         isTransitive = false
     }
 
-    shadowCommon(project(":common", "transformProductionNeoForge")){
+    shadowBundle(project(":common", "transformProductionNeoForge")){
         isTransitive = false
     }
 
     implementation("thedarkcolour:kotlinforforge-neoforge:${rootProject.property("kotlin_for_forge_version")}")
+
+    //implementation("maven.modrinth:minecraft-comes-alive-reborn:${rootProject.property("mca_version")}")
+    implementation("net.conczin.mca:mca-neoforge:7.7.33+1.21.1")
+    //implementation("net.conczin.mca:mca-common:7.7.33+1.21.1")
 }
 
 tasks.processResources {

@@ -7,7 +7,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "example_mod"
+rootProject.name = "minecraft-femboy-come-alive"
 
 include("common")
 include("fabric")

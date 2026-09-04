@@ -1,0 +1,13 @@
+{
+  "personality.yandere": "Yandere",
+  "personalityDescription.yandere": "Love like a psychopath.",
+
+  "trait.femboy": "Femboy",
+  "traitDescription.femboy": "Is male but prefers acting like a cute girl.",
+
+  "item.mfca.twenty_dollars": "Twenty dollars",
+  "item.mfca.twenty_dollars.tooltip": "Give a male villager to turn him into a femboy, or make him quit be femboy.",
+  "item.mfca.twenty_dollars.use_on_female": "Can not turn a female villager into femboy.",
+
+  "category.minecraft_femboy_come_alive": "Minecraft Femboy Come Alive"
+}

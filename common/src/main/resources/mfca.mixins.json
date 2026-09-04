@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "net.alumi.mfca.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "VillagerLikeMixin",
+    "VillagerEditorSyncRequestMixin",
+    "VillagerEditorSyncRequestInvoker",
+    "TraitsMixin",
+    "VillagerEntityMCAMixin",
+    "SkinSelectionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

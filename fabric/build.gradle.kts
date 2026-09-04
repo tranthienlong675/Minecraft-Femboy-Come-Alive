@@ -6,7 +6,8 @@ plugins {
 
 repositories {
     maven {
-        url = uri("https://maven.quiltmc.org/repository/release/")
+        name = "Conczin"
+        url = uri("https://maven.conczin.net/Artifacts/")
     }
 }
 
@@ -49,6 +50,10 @@ dependencies {
     }
 
     modImplementation("net.fabricmc:fabric-language-kotlin:${rootProject.property("fabric_language_kotlin_version")}")
+
+    //modImplementation("maven.modrinth:minecraft-comes-alive-reborn:${rootProject.property("mca_version")}")
+    //implementation("net.conczin.mca:mca-fabric:7.7.33+1.21.1")
+    implementation("net.conczin.mca:mca-common:7.7.33+1.21.1")
 }
 
 tasks.processResources {
