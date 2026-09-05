@@ -20,7 +20,7 @@ interface VillagerLikeMixin {
         cir: CallbackInfoReturnable<Boolean>
     ) {
         val traits = (this as VillagerLike<*>).traits
-        cir.returnValue = traits.hasTrait(MFCA.FEMBOY)
+        if (traits.hasTrait(MFCA.FEMBOY)) cir.returnValue = true
     }
 
     @ModifyVariable(
