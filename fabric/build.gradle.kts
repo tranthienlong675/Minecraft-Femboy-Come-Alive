@@ -20,14 +20,13 @@ val common: Configuration by configurations.creating {
     isCanBeResolved = true
     isCanBeConsumed = false
 }
-val shadowCommon: Configuration by configurations.creating {
+val shadowBundle: Configuration by configurations.creating {
     isCanBeResolved = true
     isCanBeConsumed = false
 }
 val developmentFabric: Configuration by configurations.getting
 
 configurations {
-
     compileOnly.configure { extendsFrom(common) }
     runtimeOnly.configure { extendsFrom(common) }
     developmentFabric.extendsFrom(common)
@@ -45,7 +44,7 @@ dependencies {
     common(project(":common", "namedElements")) {
         isTransitive = false
     }
-    shadowCommon(project(":common", "transformProductionFabric")){
+    shadowBundle(project(":common", "transformProductionFabric")){
         isTransitive = false
     }
 
