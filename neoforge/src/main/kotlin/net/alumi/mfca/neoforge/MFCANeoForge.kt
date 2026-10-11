@@ -13,7 +13,7 @@ class MFCANeoForge(modEventBus: IEventBus) {
     init {
         MFCA.init()
         MFCAConfigManager.init()
-        modEventBus.addListener(::addItems)
+        //modEventBus.addListener(::addItems)
     }
     companion object {}
     @SubscribeEvent
