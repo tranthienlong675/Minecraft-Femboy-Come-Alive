@@ -1,9 +1,6 @@
 {
-  "personality.yandere": "Yandere",
-  "personalityDescription.yandere": "Love like a psychopath.",
-
   "trait.femboy": "Femboy",
-  "traitDescription.femboy": "Is male but prefers acting like a cute girl.",
+  "traitDescription.femboy": "Is male but prefers acting like a girl.",
 
   "item.mfca.twenty_dollars": "Twenty dollars",
   "item.mfca.twenty_dollars.tooltip": "Give a male villager to turn him into a femboy, or make him quit be femboy.",

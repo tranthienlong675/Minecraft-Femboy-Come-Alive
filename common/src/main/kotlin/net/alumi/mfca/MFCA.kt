@@ -28,6 +28,4 @@ object MFCA {
     fun init() {
         FemboyItems.init()
     }
-
-    val YANDERE = Personality.register(MCA.locate("yandere"))
 }
