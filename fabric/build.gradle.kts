@@ -48,7 +48,7 @@ dependencies {
         isTransitive = false
     }
 
-    modImplementation("net.fabricmc:fabric-language-kotlin:${rootProject.property("fabric_language_kotlin_version")}")
+    //modImplementation("net.fabricmc:fabric-language-kotlin:${rootProject.property("fabric_language_kotlin_version")}")
 
     //modImplementation("maven.modrinth:minecraft-comes-alive-reborn:${rootProject.property("mca_version")}")
     //implementation("net.conczin.mca:mca-fabric:7.7.33+1.21.1")
@@ -83,10 +83,10 @@ tasks.processResources {
         rootProject.property("architectury_api_version")
     )
 
-    inputs.property(
-        "flk",
-        rootProject.property("fabric_language_kotlin_version")
-    )
+//    inputs.property(
+//        "flk",
+//        rootProject.property("fabric_language_kotlin_version")
+//    )
 
     filesMatching("fabric.mod.json") {
         expand(
@@ -97,7 +97,7 @@ tasks.processResources {
                 "architectury" to rootProject.property("architectury_api_version"),
                 "minecraft_version" to rootProject.property("minecraft_version"),
                 "fabric_loader_version" to rootProject.property("fabric_loader_version"),
-                "flk" to rootProject.property("fabric_language_kotlin_version")
+                //"flk" to rootProject.property("fabric_language_kotlin_version")
             )
         )
     }

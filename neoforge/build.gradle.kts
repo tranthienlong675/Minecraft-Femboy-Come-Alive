@@ -63,7 +63,7 @@ dependencies {
         isTransitive = false
     }
 
-    implementation("thedarkcolour:kotlinforforge-neoforge:${rootProject.property("kotlin_for_forge_version")}")
+    //implementation("thedarkcolour:kotlinforforge-neoforge:${rootProject.property("kotlin_for_forge_version")}")
 
     //implementation("maven.modrinth:minecraft-comes-alive-reborn:${rootProject.property("mca_version")}")
     implementation("net.conczin.mca:mca-neoforge:7.7.33+1.21.1")
@@ -81,7 +81,7 @@ tasks.processResources {
                 "mod_name" to rootProject.property("mod_name"),
                 "architectury" to rootProject.property("architectury_api_version"),
                 "minecraft_version" to rootProject.property("minecraft_version"),
-                "kff" to rootProject.property("kotlin_for_forge_version")
+                //"kff" to rootProject.property("kotlin_for_forge_version")
             )
         )
     }

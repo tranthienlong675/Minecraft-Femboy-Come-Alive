@@ -14,7 +14,6 @@ import java.util.Map;
 
 @Mixin(SkinSelection.class)
 public class SkinSelectionMixin {
-
     @ModifyVariable(
             method = "clothingForVillager",
             at = @At("STORE"),
@@ -26,7 +25,7 @@ public class SkinSelectionMixin {
             VillagerLike<?> villager,
             Map<String, String> professionConversions
     ) {
-        if (villager.getTraits().hasTrait(MFCA.INSTANCE.getFEMBOY())) {
+        if (villager.getTraits().hasTrait(MFCA.FEMBOY)) {
             return Gender.FEMALE;
         }
         return gender;

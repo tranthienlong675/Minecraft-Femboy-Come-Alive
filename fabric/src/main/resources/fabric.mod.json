@@ -16,16 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      {
-        "adapter": "kotlin",
-        "value": "net.alumi.mfca.fabric.MFCAFabric"
-      }
-    ],
-    "client": [
-      {
-        "adapter": "kotlin",
-        "value": "net.alumi.mfca.fabric.client.ExampleModFabricClient"
-      }
+        "net.alumi.mfca.fabric.MFCAFabric"
     ]
   },
   "mixins": [
@@ -37,7 +28,6 @@
     "java": ">=21",
     "architectury": ">=${architectury}",
     "fabric-api": "*",
-    "fabric-language-kotlin": ">=${flk}",
     "mca": "*"
   },
   "suggests": {
