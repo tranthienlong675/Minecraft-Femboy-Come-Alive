@@ -3,15 +3,15 @@
   "id": "${mod_id}",
   "version": "${version}",
   "name": "${mod_name}",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "An Addon that add Femboy to MCA Reborn",
   "authors": [
-    "Me!"
+    "alumi-railgun"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/example_mod/icon.png",
   "environment": "*",
   "entrypoints": {
