@@ -11,7 +11,7 @@ authors = "alumi-railgun"
 description = '''
 An Addon that add Arch Linux user to MCA Reborn
 '''
-#logoFile = ""
+logoFile = "villager-astolfo.png"
 
 [[dependencies.${mod_id}]]
 modId = "neoforge"
