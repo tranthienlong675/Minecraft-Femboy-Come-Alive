@@ -7,9 +7,9 @@ license = "Insert License Here"
 modId = "${mod_id}"
 version = "${version}"
 displayName = "${mod_name}"
-authors = "Me!"
+authors = "alumi-railgun"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+An Addon that add Arch Linux user to MCA Reborn
 '''
 #logoFile = ""
 

@@ -3,9 +3,9 @@
   "id": "${mod_id}",
   "version": "${version}",
   "name": "${mod_name}",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "An Addon that add Femboy to MCA Reborn",
   "authors": [
-    "Me!"
+    "alumi-railgun"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
