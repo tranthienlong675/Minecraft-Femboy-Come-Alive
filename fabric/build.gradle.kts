@@ -83,11 +83,6 @@ tasks.processResources {
         rootProject.property("architectury_api_version")
     )
 
-//    inputs.property(
-//        "flk",
-//        rootProject.property("fabric_language_kotlin_version")
-//    )
-
     filesMatching("fabric.mod.json") {
         expand(
             mutableMapOf(
@@ -97,7 +92,6 @@ tasks.processResources {
                 "architectury" to rootProject.property("architectury_api_version"),
                 "minecraft_version" to rootProject.property("minecraft_version"),
                 "fabric_loader_version" to rootProject.property("fabric_loader_version"),
-                //"flk" to rootProject.property("fabric_language_kotlin_version")
             )
         )
     }
@@ -105,9 +99,14 @@ tasks.processResources {
 
 tasks.shadowJar {
     configurations = listOf(project.configurations.named("shadowBundle").get())
+    archiveBaseName.set("${rootProject.property("mod_id")}")
+    archiveVersion.set("${rootProject.property("mod_version")}-fabric")
     archiveClassifier.set("dev-shadow")
 }
 
 tasks.remapJar {
     inputFile.set(tasks.shadowJar.flatMap { it.archiveFile })
+    archiveBaseName.set("${rootProject.property("mod_id")}")
+    archiveVersion.set("${rootProject.property("mod_version")}-fabric")
+    archiveClassifier.set("")
 }
