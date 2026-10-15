@@ -15,8 +15,8 @@ object MFCA {
 
     val FEMBOY = Traits.register(
         MCA.locate("femboy"),
-        0.5f,
-        0.5f
+        2.0f,
+        2.0f
     )
 
     val MCA_TAB: ResourceKey<CreativeModeTab> =
