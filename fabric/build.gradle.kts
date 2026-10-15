@@ -105,9 +105,14 @@ tasks.processResources {
 
 tasks.shadowJar {
     configurations = listOf(project.configurations.named("shadowBundle").get())
+    archiveBaseName.set("${rootProject.property("mod_id")}")
+    archiveVersion.set("${rootProject.property("mod_version")}-fabric")
     archiveClassifier.set("dev-shadow")
 }
 
 tasks.remapJar {
     inputFile.set(tasks.shadowJar.flatMap { it.archiveFile })
+    archiveBaseName.set("${rootProject.property("mod_id")}")
+    archiveVersion.set("${rootProject.property("mod_version")}-fabric")
+    archiveClassifier.set("")
 }
