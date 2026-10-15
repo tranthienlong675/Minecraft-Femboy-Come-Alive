@@ -12,7 +12,7 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "MIT",
-  "icon": "assets/example_mod/icon.png",
+  "icon": "assets/mfca/villager-astolfo.png",
   "environment": "*",
   "entrypoints": {
     "main": [
