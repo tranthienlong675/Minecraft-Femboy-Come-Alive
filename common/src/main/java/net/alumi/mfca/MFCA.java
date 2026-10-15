@@ -15,8 +15,8 @@ public final class MFCA {
 
     public static final Traits.Trait FEMBOY = Traits.register(
             MCA.locate("femboy"),
-            0.5f,
-            0.5f
+            2.0f,
+            2.0f
     );
 
     public static final ResourceKey<CreativeModeTab> MCA_TAB = ResourceKey.create(
