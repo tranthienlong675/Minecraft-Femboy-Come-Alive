@@ -1,4 +1,4 @@
-This Addon add Femboy trait to MCA Reborn.
+This Addon adds Femboy trait to MCA Reborn.
 
 Key detail:
 * Femboy can spawn naturally with very rare chance. You can see them with female clothes and hair.
