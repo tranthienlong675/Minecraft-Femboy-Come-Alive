@@ -15,5 +15,6 @@ public interface VillagerLikeMixin {
         VillagerLike villager = (VillagerLike)(Object)this;
 
         if (villager.getTraits().hasTrait(MFCA.FEMBOY) || other.getTraits().hasTrait(MFCA.FEMBOY)) cir.setReturnValue(true);
+
     }
 }
