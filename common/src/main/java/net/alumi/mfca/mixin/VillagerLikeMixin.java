@@ -11,10 +11,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(VillagerLike.class)
 public interface VillagerLikeMixin {
     @Inject(method = "canBeAttractedTo", at = @At("HEAD"), cancellable = true)
-    private void attractionMixin(CallbackInfoReturnable<Boolean> cir) {
-        VillagerLike villagerLike = (VillagerLike)(Object)this;
-        Traits traits = villagerLike.getTraits();
+    private void attractionMixin(VillagerLike<?> other, CallbackInfoReturnable<Boolean> cir) {
+        VillagerLike villager = (VillagerLike)(Object)this;
 
-        if (traits.hasTrait(MFCA.FEMBOY)) cir.setReturnValue(true);
+        if (villager.getTraits().hasTrait(MFCA.FEMBOY) || other.getTraits().hasTrait(MFCA.FEMBOY)) cir.setReturnValue(true);
     }
 }
