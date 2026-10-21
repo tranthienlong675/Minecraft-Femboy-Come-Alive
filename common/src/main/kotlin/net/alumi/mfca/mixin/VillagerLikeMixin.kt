@@ -17,10 +17,11 @@ interface VillagerLikeMixin {
         cancellable = true
     )
     private fun attractionMixin(
+        other: VillagerLike<*>,
         cir: CallbackInfoReturnable<Boolean>
     ) {
-        val traits = (this as VillagerLike<*>).traits
-        if (traits.hasTrait(MFCA.FEMBOY)) cir.returnValue = true
+        val villager = (this as VillagerLike<*>)
+        if (villager.traits.hasTrait(MFCA.FEMBOY) || other.traits.hasTrait(MFCA.FEMBOY)) cir.returnValue = true
     }
 
     @ModifyVariable(
